@@ -2,11 +2,11 @@
 
 Real-Time Hand VFX System
 
-Project Title
+# Project Title
 
 Real-Time Hand VFX System -- Neon Hand Tracking & Magic Effects
 
-Description
+# Description
 
 Real-Time Hand VFX System is a webcam-based computer vision application
 that tracks hand movements in real time and overlays cinematic neon
@@ -22,7 +22,7 @@ The application is designed to run on Windows with Python 3.12 and
 includes a batch launcher that automatically checks Python and installs
 the required dependencies.
 
-Main Features
+# Main Features
 
 Real-time webcam hand tracking
 
@@ -56,7 +56,7 @@ Automatic webcam detection across camera indexes 0, 1, and 2
 
 Helpful startup and dependency error messages
 
-Technologies Used
+# Technologies Used
 
 Python 3.12
 
@@ -72,7 +72,7 @@ The source code explicitly checks that the installed MediaPipe package
 provides the classic mp.solutions.hands API. It is configured for
 MediaPipe 0.10.21.
 
-Requirements
+# Requirements
 
 Windows PC
 
@@ -91,7 +91,7 @@ opencv-python==4.10.0.84
 mediapipe==0.10.21
 protobuf>=4.25.3,<5
 
-Project Files
+# Project Files
 
 Hand_VFX_Project/
 │
@@ -104,7 +104,7 @@ If your downloaded files contain (2) in their filenames, rename them
 to match the names above, because the included batch launcher expects
 requirements.txt and Hand_VFX_Working.py.
 
-How to Run
+# How to Run
 
 Method 1 -- Recommended
 
@@ -130,14 +130,14 @@ The Hand VFX application starts automatically.
 
 Allow camera access if Windows asks for permission.
 
-Method 2 -- PowerShell / Command Prompt
+# Method 2 -- PowerShell / Command Prompt
 
 Open a terminal in the project folder and run:
 
 py -3.12 -m pip install -r requirements.txt
 py -3.12 Hand_VFX_Working.py
 
-Controls
+# Controls
 
 Key   Action
 
@@ -151,36 +151,36 @@ in the on-screen HUD.
 
 How the Effects Work
 
-Neon Hand Skeleton
+# Neon Hand Skeleton
 
 MediaPipe provides 21 landmarks for each detected hand. The application
 connects these landmarks using glowing multi-layer lines to create a
 neon skeleton.
 
-Palm Aura
+# Palm Aura
 
 When enabled, a pulsing set of glowing rings is rendered around the
 calculated palm center.
 
-Finger Energy Beams
+# Finger Energy Beams
 
 When two hands are detected, corresponding fingertips are connected with
 neon energy lines. Each finger uses its own configured color.
 
-Fingertip Join Effect
+# Fingertip Join Effect
 
 When corresponding fingertips from the two tracked hands move close
 enough together, the application creates a glowing energy orb and
 cross-shaped flare at the connection point.
 
-Magic Shield
+# Magic Shield
 
 When exactly one hand is detected and the fingers form an open-palm
 gesture, a circular magical shield appears around the palm. The shield
 contains multiple glowing rings, rotating geometric shapes, radial
 lines, arcs, and a pulsing core.
 
-Configuration
+# Configuration
 
 Most visual settings are stored in the Config class inside
 Hand_VFX_Working.py.
@@ -218,7 +218,7 @@ Neon colors
 This makes the project easy to customize without changing the main
 application structure.
 
-Troubleshooting
+# Troubleshooting
 
 Python 3.12 is not found
 
@@ -255,7 +255,7 @@ Run_Hand_VFX.bat
 
 If a dependency error appears, reinstall the requirements.
 
-Performance Notes
+# Performance Notes
 
 The application requests a target camera resolution of 1280×720 at
 30 FPS, although the actual resolution and frame rate depend on the
@@ -271,7 +271,7 @@ Keep the camera feed well lit.
 
 Avoid running many GPU/CPU-heavy applications at the same time.
 
-Project Goal
+# Project Goal
 
 The goal of this project is to demonstrate how real-time computer vision
 and image processing can be combined to create interactive visual
@@ -291,9 +291,7 @@ Educational MediaPipe/OpenCV projects
 
 Future gesture-based games and interfaces
 
-License
 
-Add your preferred license here before publishing the project publicly.
 
 Author
 
