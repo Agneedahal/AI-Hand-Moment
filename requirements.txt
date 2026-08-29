@@ -1,5 +1,0 @@
-# Hand VFX - tested dependency set for the classic MediaPipe Hands API
-numpy==1.26.4
-opencv-python==4.10.0.84
-mediapipe==0.10.21
-protobuf>=4.25.3,<5
